@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/* Navigation bar */
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
+    color: white;
+    margin-bottom: 24px;
+}
+
+#logo {
+    height: 80px;
+    width: 170px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.col a {
+  padding: 8px;
+  text-decoration: none;
+  padding-bottom: 10px;
+  align-content: flex-end;
+  color: black;
+}
+
+.bottom {
+  margin-top: 17px;
+}
+
+.top {
+  margin-left: 0px;
+}
+
+#sign-up {
+  background-color: pink;
+  border-radius: 7px;
+  color: white;
+}
+
+#log-in {
+  color: grey;
+}
+
+.bottom a:hover {
+    border-bottom: 4px solid pink;
+}
+
+.top #log-in:hover {
+  color: black;
+}
+
+.top #sign-up:hover {
+  background-color: #e75480;
+}
+
+/* First Screen */
+
+/*html {
+ background-image: url("assets/farm_img.jpg");
+ height: 100%;
+ background-position: top;
+ background-repeat: no-repeat;
+ background-size: 100% 75%;
+ background-attachment: scroll;
+}*/
+
+main {
+  margin-top: -50px;
+}
+
+#main-image {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+h1 {
+ font-size: 3rem;
+ margin-top: 2em;
+ text-align: center;
+ top: 75%;
+ left: 75%;
+ color: white;
+}
+
+p {
+   color: white;
+   font-size: 1.5rem;
+   text-align: center;
+}
