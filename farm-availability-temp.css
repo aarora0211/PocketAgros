@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+/* Navigation bar */
+.row_nav {
+    padding: 6px;
+    color: white;
+    margin-bottom: 1px;
+    margin-top: 5px;
+}
+
+#logo {
+    height: 40px;
+    width: 80px;
+    margin-top: 20px;
+}
+
+#shopping-cart {
+  margin-top: -10px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+}
+
+.col a {
+  padding: 2px;
+  text-decoration: none;
+  color: black;
+}
+
+.bottom {
+  position: absolute;
+  right: 5px;
+  margin-bottom: 4px;
+}
+
+.top {
+  position: absolute;
+  right: 5px;
+  margin-top: -60px;
+}
+
+#sign-up {
+  background-color: pink;
+  border-radius: 4px;
+  color: white;
+}
+
+#log-in {
+  color: grey;
+}
+
+.bottom a:hover {
+    border-bottom: 1px solid pink;
+}
+
+.top #log-in:hover {
+  color: black;
+}
+
+.top #sign-up:hover {
+  background-color: #e75480;
+}
+
+main {
+  margin-top: -12px;
+}
+
+#main-image {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+h1 {
+ font-size: 3rem;
+ text-align: center;
+ margin-left: 12.5px;
+ top: 75%;
+ left: 75%;
+ color: white;
+}
+
+h4 {
+ font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+
+p {
+   color: black;
+   text-align: center;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+border: none;
+outline: 0;
+padding: 12px;
+color: white;
+background-color: pink;
+text-align: center;
+cursor: pointer;
+width: 100%;
+font-size: 18px;
+}
+
+.container {
+  background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    justify-content: space-between;
+    opacity: 0.9;
+  }
+}
+
+.rows1 {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  opacity: .9;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 12.5px;
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 2.5px 2px 0 0;
+  border-color: pink;
+}
+
+/*footer*/
+.footer {
+  display: inline;
+  style="white-space:nowrap"
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 0 auto;
+  float: center;
+  display: table;
+}
+
+.form-inline label, .farm-availability-form label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input, .farm-availability-form input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline button, .farm-availability-form button {
+  padding: 10px 20px;
+  background-color: pink;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover, .farm-availability-form button:hover, .card button:hover{
+  background-color: #e75480;
+}
+
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+    float: center;
+  }
+
+.social-media {
+  float:right;
+  margin-top: -100px;
+  margin-right: 10px;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 20px;
+  text-align: right;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  text-align: right
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+@media (max-width: 1200px){
+    .social-media {
+        display : none;
+        visibility : hidden;
+    }
+}
+
+@media (max-width: 900px){
+  input[type=full-name], .full-name {
+    display : none;
+    visibility : hidden;
+  }
+}
+
+/*Farm availability request form*/
+.instructions p {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.farm-availability-form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+  font-size: 300%;
+}
+
+.farm-availability-form button {
+  padding: 20px 50px;
+}
+
+.container {
+  color: black;
+}
+
+input[type=text], .col-75 input[type=email], select, textarea, .expected {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: black;
+}
+
+input[type=submit] {
+  text-align: center;
+  background-color: pink;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  width: 100%
+}
+
+input[type=submit]:hover {
+  background-color: #e75480;
+}
+
+.container2 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  margin: auto;
+  float: center;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/* also handles the shaping of the footer */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
