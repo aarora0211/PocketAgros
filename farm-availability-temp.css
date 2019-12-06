@@ -45,6 +45,15 @@ html {
   color: black;
 }
 
+#hm {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  float: right;
+  display: none;
+}
+
 .bottom {
   position: absolute;
   right: 5px;
@@ -137,6 +146,16 @@ font-size: 18px;
 }
 
 @media screen and (max-width: 600px) {
+
+  .top, .bottom {
+    display: none;
+  }
+
+  #hm {
+    display: block;
+    align-self: flex-end;
+  }
+
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: auto;

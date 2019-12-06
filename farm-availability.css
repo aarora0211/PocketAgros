@@ -10,7 +10,6 @@ body {
   padding: 0px;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -46,6 +45,15 @@ html {
   padding: 2px;
   text-decoration: none;
   color: black;
+}
+
+#hm {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  float: right;
+  display: none;
 }
 
 .bottom {
@@ -141,6 +149,15 @@ font-size: 18px;
 }
 
 @media screen and (max-width: 600px) {
+
+  .top, .bottom {
+    display: none;
+  }
+
+  #hm {
+    display: block;
+    align-self: flex-end;
+  }
   .card {
     margin: auto;
     text-align: center;
