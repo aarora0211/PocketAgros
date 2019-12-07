@@ -5,21 +5,21 @@
       "Location": "Vancouver, WA",
       "Price": "$250",
       "Catchy_Line": "Freshness Guranteed",
-      "Image_Link": "./assets/farm1.jpeg"
+      "Image_Link": "./assets/Farm1.JPEG"
     },
     {
       "Farm_Name": "Dhillon's Agriculture",
       "Location": "Vancouver, WA",
       "Price": "$200",
       "Catchy_Line": "The best quality ogranic produce available",
-      "Image_Link": "./assets/farm2.jpg"
+      "Image_Link": "./assets/Farm2.JPG"
     },
     {
       "Farm_Name": "Fresh Produce",
       "Location": "Leavenworth, WA",
       "Price": "$180",
       "Catchy_Line": "Serving from the last 150 years",
-      "Image_Link": "../assets/farm3.jpg"
+      "Image_Link": "../assets/Farm3.jpg"
     }
   ]
 }
