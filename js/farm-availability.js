@@ -6,7 +6,7 @@ var check = false;
 
 // read the csv file
 function retrieveData() {
-  fetch("../Dataset_Farm.json")
+  fetch("../datasetfarm.json")
   .then(function (response) {
      return response.json();
   }).then(function (data) {
