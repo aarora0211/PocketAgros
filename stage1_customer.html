@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <meta name="description" content="Web app to connect individuals and food banks">
+    <meta name="keywords" content="Pocket-agro, farm, my farm, food">
+    <meta name="author" content="Akshit Arora, Sukhman Dhillon">
+    <!-- Icon on the page -->
+    <link rel="icon" href="assets/logo.jpeg">
+    <link href="farm-availability.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+    <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+    <title>Pocket Agro</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <!-- The navigation bar -->
+        <div>
+            <nav class="row_nav">
+                <!-- setting up the icon in the navigation bar -->
+                <div>
+                    <img id="logo" src="assets/logo.png" alt="Pocket Agro's Logo">
+                </div>
+                <div class="hamburger">
+                    <button onclick="myFunction1()" class="hbr_btn">
+                        <i class="fa fa-bars" aria-label="Hamburger Menu"></i>
+                    </button>
+
+                    <div id="myDropdown-1" class="dropdown-content-1" aria-label="Hamburger Dropdown">
+                        <a href="#">About Us</a>
+                        <a href="#">Our Mission</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Cart</a>
+                        <a href="#">Sign Out</a>
+                    </div>
+                </div>
+
+                <div class="col">
+
+                    <div class="top" id="top">
+                        <a href="#" id="log-in">Hello Akshit!</a>
+                        <a href="#" id="sign-up">Log Out</a>
+                        <a href="#" class="fa fa-shopping-cart" id="shopping-cart"></a>
+                        <a href="#" id="no-cart">0</a>
+                    </div>
+
+                    <div class="bottom" id="bottom">
+                        <a href="#">ABOUT US</a>
+                        <a href="#">OUR MISSION</a>
+                        <a href="#">CONTACT US</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="background" id="main-image">
+            <h1>FARMS AVAILABLE</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="instructions">
+                <p>Our community's local farms. Everything used to grow your produce is of best quanlity and organic</p>
+                <p>Please click on each box to see the details</p>
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <!-- Dropdown -->
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Sort by</button>
+                <div id="myDropdown" class="dropdown-content" role="alert">
+                    <a href="#" onclick="sortBy('Price High To Low')">Price High To Low</a>
+                    <a href="#" onclick="sortBy('Price Low To High')">Price Low to High</a>
+                    <a href="#" onclick="sortBy('A-Z')">A-Z</a>
+                </div>
+            </div>
+
+            <!--Cards -->
+            <div class="farms-available">
+                <div class="rows1" id="card_list" aria-live="polite">
+                    <div class="card">
+                        <div class="container" id="container1"> </div>
+                    </div>
+                    <div class="card">
+                        <div class="container" id="container2"></div>
+                    </div>
+                    <div class="card">
+                        <div class="container" id="container3"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Can't find the suitable farm? Fill up this form and one of our customer representatives will contact you</h2>
+
+            <!-- Contact Form -->
+            <div class="container2">
+                <form action="stage1_customer.html" role="form" aria-label="Support Form">
+                    <div class="row2">
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="col-25">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="col-25">
+                            <label for="email">Email ID</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="email" id="email" placeholder="Enter email" name="email">
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="col-25">
+                            <label for="Expected Start Date">Expected Start Date</label>
+                        </div>
+                        <div class="col-75">
+                            <select class="expected" id="Expected Start Date" name="Expected Start Date">
+                                <option value="Within a week">Within a week</option>
+                                <option value="Within a month">Within a month</option>
+                                <option value="Within 3 months">Within 3 months</option>
+                                <option value="Just an inquiry">Just an inquiry</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="col-25">
+                            <label for="Your-requirements">Your requirements</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="Your-requirements" name="Your-requirements" placeholder="Your requirements.."></textarea>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p> <img id="logo-1" src="assets/logo.png" alt="Pocket Agro's Logo"> Sign up to receive news and updates from the Pocket Argo!</p>
+        <!--   -->
+        <form class="form-inline" action="stage1_customer.html" role="form" aria-label="Feed Form">
+            <label for="email">Email:</label>
+            <input type="email" id="email_inline" placeholder="Enter email" name="email">
+            <label class="full-name" for="full-name">Full Name:</label>
+            <input type="full-name" id="full-name" placeholder="Full Name" name="name">
+            <button type="submit">Submit</button>
+        </form>
+        <div class="social-media">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <a href="#" class="fa fa-facebook" aria-label="Facebook Link"></a>
+            <a href="#" class="fa fa-twitter" aria-label="Twitter Link"></a>
+        </div>
+    </footer>
+    <script src="js/farm-availability.js"></script>
+
+</body>
+</html>
