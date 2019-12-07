@@ -6,7 +6,7 @@ var check = false;
 
 // read the csv file
 function retreiveData() {
-    d3.csv("../Farm_Dataset.csv").then(function(data) {
+    d3.csv("../farmdataset.csv").then(function(data) {
         rows[0] = data[0];
         rows[1] = data[1];
         rows[2] = data[2];
