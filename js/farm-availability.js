@@ -5,22 +5,22 @@ var count = 0;
 var check = false;
 
 // read the csv file
-function retreiveData() {
-    d3.csv("../farmdataset.csv").then(function(data) {
-        rows[0] = data[0];
-        rows[1] = data[1];
-        rows[2] = data[2];
-        updateCards(rows);
-    }).then(function(d) {
-        initialize(rows);
-    })
+function retrieveData() {
+  fetch("../Dataset_Farm.json")
+  .then(function (response) {
+     return response.json();
+  }).then(function (data) {
+     console.log(data.data[0].Price);
+     rows = data.data;
+     updateCards(rows);
+  });
 }
 
 function initialize(data) {
     rows = data;
 }
 
-retreiveData();
+retrieveData();
 
 //updates the card with all the values retreived from the CSV file
 function updateCards(data) {

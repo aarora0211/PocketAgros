@@ -1,0 +1,25 @@
+{
+  "data":[
+    {
+      "Farm_Name": "PNW Agriculture Co.",
+      "Location": "Vancouver, WA",
+      "Price": "$250",
+      "Catchy_Line": "Freshness Guranteed",
+      "Image_Link": "assets/farm1.jpeg"
+    },
+    {
+      "Farm_Name": "Dhillon's Agriculture",
+      "Location": "Vancouver, WA",
+      "Price": "$200",
+      "Catchy_Line": "The best quality ogranic produce available",
+      "Image_Link": "assets/farm2.jpg"
+    },
+    {
+      "Farm_Name": "Fresh Produce",
+      "Location": "Leavenworth, WA",
+      "Price": "$180",
+      "Catchy_Line": "Serving from the last 150 years",
+      "Image_Link": "assets/farm3.jpg"
+    }
+  ]
+}
