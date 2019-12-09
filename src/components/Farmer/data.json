@@ -1,0 +1,26 @@
+{
+    "data":[
+      {
+        "Area": "10000 sq m",
+        "City": "Seattle",
+        "State": "WA",
+        "Zip": "98105",
+        "Soil": "Silty",
+        "Start": "10/10/2019",
+        "End": "10/10/2020",
+        "Price": "10000$",
+        "Image": "/assets/card-1.jpg"
+      },
+      {
+        "Area": "10000 sq m",
+        "City": "Seattle",
+        "State": "WA",
+        "Zip": "98105",
+        "Soil": "Chalky",
+        "Start": "10/10/2019",
+        "End": "10/10/2021",
+        "Price": "15000$",
+        "Image": "/assets/card-2.jpg"
+      }
+    ]
+}

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+#mainAboutUs {
+	text-align: center;
+  margin-top: 130px;
+}
+
+.purple-color{
+  background-color: #B02376;
+}
+
+#aboutUsImg{
+  height: 370px;
+  width: 100%;
+}
+
+.white-color p, .white-color h1 {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.purple-color p, .purple-color h1{
+  font-size: 1.5rem;
+  color: white;
+}
